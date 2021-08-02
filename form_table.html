@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function checkGender()
+            {
+                var gender = document.querySelector('input[name="gen"]:checked');
+                if(gender==""|| gender==null)
+                {
+                    alert("Select Gender");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="fname" id="fname"/>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+        <hr/>
+        <form>
+            <table>
+                <tr>
+                    <td>First Name</td>
+                    <td>
+                        <input type="text" name="fname" id="fname"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td>
+                        <input type="text" name="lname" id="lname"/>
+                    </td>
+                </tr>
+                
+            </table>
+
+        </form>
+        <hr/>
+        <label>Gender</label><br/>
+        Male<input type="radio" name="gen" value="Male"/>
+        Female<input type="radio" name="gen" value="Female"/>
+        <br/>
+        <input type="button" value="Submit" onclick="checkGender()"/>
+    </body>
+</html>
